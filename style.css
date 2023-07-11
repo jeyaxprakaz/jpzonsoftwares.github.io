@@ -1,0 +1,55 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+      min-height: 100%;
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+    /* Add a new CSS class for image containers */
+    .w3-image-container {
+        position:absolute;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* Adjust this value as needed to control image aspect ratio */
+    }
+    /* Style the images within the containers */
+    .w3-image-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Adjust the margin between sections */
+    .w3-section {
+        margin-bottom: 32px;
+    }
+    
+    @media (max-width: 768px) {
+        /* Adjust the breakpoint as needed */
+        .w3-display-left,
+        .w3-display-bottomleft {
+            position: static !important;
+            transform: none !important;
+        }
+        .w3-text-white {
+            text-align: center;
+        }
+        .w3-jumbo {
+            font-size: 36px !important;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .w3-third {
+          width: 100% !important;
+          margin-bottom: 24px;
+        }
+    }
