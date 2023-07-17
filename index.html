@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
+     <script>
+    // Add X-Frame-Options header to the page
+    if (top.location !== self.location) {
+      document.addEventListener('DOMContentLoaded', function() {
+        var xFrameOptionsMeta = document.createElement('meta');
+        xFrameOptionsMeta.setAttribute('http-equiv', 'X-Frame-Options');
+        xFrameOptionsMeta.setAttribute('content', 'SAMEORIGIN');
+        document.head.appendChild(xFrameOptionsMeta);
+      });
+    }
+  </script
   </head>
 <body>
 
